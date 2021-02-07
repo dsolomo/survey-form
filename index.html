@@ -14,19 +14,19 @@
     <body>
         <form action="#" id="survey-form">
             <div class="name">
-                <label for="name">Name
+                <label for="name">Name</br>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
             </div>
             <div class="email">
-                <label for="email">Email
+                <label for="email">Email</br>
                 <input type="email" name="email" id="email"  placeholder="Enter your Email" required></label>
             </div>
             <div>
-                <label for="Age">Age <span class="clarification-text">(optional)</span> 
+                <label for="Age">Age <span class="clarification-text">(optional)</span></br>
                 <input type="number" name="age" id="age" value="age" placeholder="Age"></label>
             </div>
 
-            <label for="current-situation">Which option best describes your current situation
+            <label for="current-situation">Which option best describes your current situation</br>
             <select name="current-situation" id="situation">
                 <option value="" class="placeholder-text" disabled selected hidden>Select current role</option>
                 <option value="student">Student</option>
@@ -36,7 +36,7 @@
                 <option value="other">Other</option>
             </select>
             </label>
-            
+        </br>
             <fieldset>
                 <legend for="watch-sb">Will you be watching the Super Bowl in February 2021?</legend>
                     <input type="radio" name="watch-sb" id="will-watch">
@@ -56,17 +56,22 @@
             </select>
 
             <div class="sb-food">
-                <label for="sb-food">What will you be eating while watching the Super Bowl <span class="clarification-text">(Check all that apply)</span>
-                    <input type="checkbox" name="sb-food" id="">test</br>
-                    <input type="checkbox" name="sb-food" id="">test 2</br>
-                    <input type="checkbox" name="sb-food" id=""></br>
-                    <input type="checkbox" name="sb-food" id=""></br>
-                    <input type="checkbox" name="sb-food" id=""></br>
-                    <input type="checkbox" name="sb-food" id=""></br>
-                    <input type="checkbox" name="sb-food" id=""></br>
-                    <input type="checkbox" name="sb-food" id=""></br>
+                <label for="sb-food">What will you be eating while watching the Super Bowl <span class="clarification-text">(Check all that apply)</span></br>
+                    <input type="checkbox" name="sb-food" id="wings">Chicken Wings</br>
+                    <input type="checkbox" name="sb-food" id="buffalo-chicken">Bufflo Chicken Pizza</br>
+                    <input type="checkbox" name="sb-food" id="sliders">Cheeseburger Sliders</br>
+                    <input type="checkbox" name="sb-food" id="frickles">Fried Pickles</br>
+                    <input type="checkbox" name="sb-food" id="chips">Chips and Dip</br>
+                    <input type="checkbox" name="sb-food" id="poppers">Jalepe&#xf1;o Poppers</br>
+                    <input type="checkbox" name="sb-food" id="hot-dogs">Hot Dogs</br>
+                    <input type="checkbox" name="sb-food" id="fries">French Fries</br>
                 </label>
             </div>
+            <div class="comments">
+                <label for="more-comments">Any comments or suggestions?</label></br>
+                <input type="text" name="comments" id="more-comments" placeholder="Enter your comment here...">    
+            </div>
+            <input type="submit" id="submit-btn" value="Submit">
         </form>
     </body>    
 </main>
