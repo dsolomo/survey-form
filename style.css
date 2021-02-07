@@ -1,0 +1,9 @@
+html {
+    background: url('https://theqbeq.com/wp-content/uploads/2018/10/328749-large-football-field-background-2400x1600-for-macbook.jpg');
+    background-color: hsl(100, 100%, 100%);
+}
+
+main {
+    max-width: 750px;
+    margin: auto;
+}
