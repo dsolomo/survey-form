@@ -13,14 +13,49 @@
     </header>
     <body>
         <form action="#" id="survey-form">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" value="Enter your name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" Value="Enter your Email" required>
-            <label for="Age">Age</label>
-            <input type="number" name="age" id="age" value="Age">
-        
-        
+            <div class="name">
+                <label for="name">Name
+                <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+            </div>
+            <div class="email">
+                <label for="email">Email
+                <input type="email" name="email" id="email"  placeholder="Enter your Email" required></label>
+            </div>
+            <div>
+                <label for="Age">Age <span class="clarification-text">(optional)</span> 
+                <input type="number" name="age" id="age" value="age" placeholder="Age"></label>
+            </div>
+
+            <label for="current-situation">Which option best describes your current situation
+            <select name="current-situation" id="situation">
+                <option value="" class="placeholder-text" disabled selected hidden>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="no-preference">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            </label>
+            
+            <fieldset>
+                <legend for="watch-sb">Will you be watching the Super Bowl in February 2021?</legend>
+                    <input type="radio" name="watch-sb" id="will-watch">
+                        <label for="will-watch">I'll definitely watch</label>
+                    <input type="radio" name="watch-sb" id="no-watch">
+                        <label for="no-watch">No, I won't be watching</label>
+                    <input type="radio" name="watch-sb" id="may-watch">
+                        <label for="may-watch">I'm not sure yet</label>               
+            </fieldset>
+            
+            <select name="root-for" id="root-for" required>
+                <option value="" class="placeholder-text" disable selected>Select an option</option>
+                <option value="chiefs" name="root-for" id="chiefs">Kansas City Chiefs</option>
+                <option value="tampa-bay" name="root-for" id="tampa-bay">Tampa Bay Buccaneers</option>
+                <option value="neither" name="root-for" id="neither-option">Neither, I want them both to lose</option>
+                <option value="idk" name="root-for" id="idk">I'm not sure, I'll decide when I start watching</option>
+            </select>
+
+            <label for="sb-food"></label>
         
         </form>
     </body>    
