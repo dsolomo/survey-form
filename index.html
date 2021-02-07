@@ -14,16 +14,16 @@
     <body>
         <form action="#" id="survey-form">
             <div class="name">
-                <label for="name">Name</br>
+                <label for="name" id="name-label">Name</br>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
             </div>
             <div class="email">
-                <label for="email">Email</br>
+                <label for="email" id="email-label">Email</br>
                 <input type="email" name="email" id="email"  placeholder="Enter your Email" required></label>
             </div>
             <div>
-                <label for="Age">Age <span class="clarification-text">(optional)</span></br>
-                <input type="number" name="age" id="age" value="age" placeholder="Age"></label>
+                <label for="Age" id="number-label">Age <span class="clarification-text">(optional)</span></br>
+                <input type="number" name="age" id="number" value="age" placeholder="Age" min="1" max="101"></label>
             </div>
 
             <label for="current-situation">Which option best describes your current situation</br>
@@ -39,15 +39,15 @@
         </br>
             <fieldset>
                 <legend for="watch-sb">Will you be watching the Super Bowl in February 2021?</legend>
-                    <input type="radio" name="watch-sb" id="will-watch">
-                        <label for="will-watch">I'll definitely watch</label>
-                    <input type="radio" name="watch-sb" id="no-watch">
+                    <input type="radio" name="watch-sb" id="will-watch" value="yes">
+                        <label for="will-watch" value="yes">I'll definitely watch</label>
+                    <input type="radio" name="watch-sb" id="no-watch" value="no">
                         <label for="no-watch">No, I won't be watching</label>
-                    <input type="radio" name="watch-sb" id="may-watch">
+                    <input type="radio" name="watch-sb" id="may-watch" value="maybe">
                         <label for="may-watch">I'm not sure yet</label>               
             </fieldset>
             
-            <select name="root-for" id="root-for" required>
+            <select name="root-for" id="dropdown" required>
                 <option value="" class="placeholder-text" disable selected>Select an option</option>
                 <option value="chiefs" name="root-for" id="chiefs">Kansas City Chiefs</option>
                 <option value="tampa-bay" name="root-for" id="tampa-bay">Tampa Bay Buccaneers</option>
@@ -57,21 +57,21 @@
 
             <div class="sb-food">
                 <label for="sb-food">What will you be eating while watching the Super Bowl <span class="clarification-text">(Check all that apply)</span></br>
-                    <input type="checkbox" name="sb-food" id="wings">Chicken Wings</br>
-                    <input type="checkbox" name="sb-food" id="buffalo-chicken">Bufflo Chicken Pizza</br>
-                    <input type="checkbox" name="sb-food" id="sliders">Cheeseburger Sliders</br>
-                    <input type="checkbox" name="sb-food" id="frickles">Fried Pickles</br>
-                    <input type="checkbox" name="sb-food" id="chips">Chips and Dip</br>
-                    <input type="checkbox" name="sb-food" id="poppers">Jalepe&#xf1;o Poppers</br>
-                    <input type="checkbox" name="sb-food" id="hot-dogs">Hot Dogs</br>
-                    <input type="checkbox" name="sb-food" id="fries">French Fries</br>
+                    <input type="checkbox" name="sb-food" value="wings" id="wings">Chicken Wings</br>
+                    <input type="checkbox" name="sb-food" value="buffalo-chicken" id="buffalo-chicken">Bufflo Chicken Pizza</br>
+                    <input type="checkbox" name="sb-food" value="sliders" id="sliders">Cheeseburger Sliders</br>
+                    <input type="checkbox" name="sb-food" value="frickles" id="frickles">Fried Pickles</br>
+                    <input type="checkbox" name="sb-food" value="chips" id="chips">Chips and Dip</br>
+                    <input type="checkbox" name="sb-food" value="poppers" id="poppers">Jalepe&#xf1;o Poppers</br>
+                    <input type="checkbox" name="sb-food" value="hot-dogs" id="hot-dogs">Hot Dogs</br>
+                    <input type="checkbox" name="sb-food" value="fries" id="fries">French Fries</br>
                 </label>
             </div>
             <div class="comments">
                 <label for="more-comments">Any comments or suggestions?</label></br>
-                <input type="text" name="comments" id="more-comments" placeholder="Enter your comment here...">    
+                <textarea name="comments" id="more-comments" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>   
             </div>
-            <input type="submit" id="submit-btn" value="Submit">
+            <input type="submit" id="submit" value="Submit">
         </form>
     </body>    
 </main>
