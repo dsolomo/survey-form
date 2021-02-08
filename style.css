@@ -47,4 +47,10 @@ fieldset,
 
 .comments textarea {
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clarification-text {
+    font-size: 70%;
 }
